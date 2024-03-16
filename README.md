@@ -1,14 +1,13 @@
 ## Contents
-* [Description](#description)
 * [autoEndTask](#autoendtask)
+* [oldMenu](#oldmenu)
 * [Powershell commands](#powershell-commands)
 
-## Description
-Collection of scripts for tweaking windows
-
 ## autoEndTask
-When Windows shuts down, a prompt to close programs manually can prevent this. To close them automatically, add a rule to your Windows machine with `add autoEndTask.reg`. Be warned, however, that unsaved progress from any program will be lost. If you always save your progress, this is not a problem. To remove the rule, use `del autoEndTask.reg`.
+Windows shutdown can sometimes be stopped by a prompt to end programs that are still running. To end them automatically, add this rule to your Windows computer by using `add autoEndTask.reg` once. Be warned, however, that unsaved progress of programs that are still running will be lost. If you always save your progress, this is not a problem. To revert, use `del autoEndTask.reg` once.
+
+## oldMenu
+If you do not like the new & short context menu from Windows 11, use `add oldMenu` once. After sometime you get the old & full context menu without detours. To revert, use `del oldMenu.reg` once.
 
 ## Powershell commands
-The execution of Powershell scripts is disabled by default for security reasons. Here you can copy the required code and paste it into your own Powershell terminal:
-* Read Windows activation key `(Get-WmiObject -query ’select * from SoftwareLicensingService‘).OA3xOriginalProductKey`
+* Show Windows activation key `(Get-WmiObject -query ’select * from SoftwareLicensingService‘).OA3xOriginalProductKey`
