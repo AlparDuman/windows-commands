@@ -1,13 +1,13 @@
-## Contents
-* [autoEndTask](#autoendtask)
-* [oldMenu](#oldmenu)
-* [Powershell commands](#powershell-commands)
-
-## autoEndTask
-<p align="justify">Windows shutdown can sometimes be stopped by a prompt to end programs that are still running. To end them automatically, add this rule to your Windows computer by using `add autoEndTask.reg` once. Be warned, however, that unsaved progress of programs that are still running will be lost. If you always save your progress, this is not a problem. To revert, use `del autoEndTask.reg` once.</p>
-
-## oldMenu
-<p align="justify">If you do not like the new & short context menu from Windows 11, use `add oldMenu.reg` once. After sometime you get the old & full context menu without detours. To revert, use `del oldMenu.reg` once.</p>
-
+## Registry files
+| Description  | Download |
+| - | - |
+| Do not block shutdown with still running programs. $${\color{red}Any}$$ $${\color{red}progress}$$ $${\color{red}not}$$ $${\color{red}saved}$$ $${\color{red}will}$$ $${\color{red}be}$$ $${\color{red}lost!}$$ | [![add](https://img.shields.io/badge/File%20to-install-blue)](https://raw.githubusercontent.com/AlparDuman/windows-tweaks-collection/main/add%20autoEndTask.reg) [![undo](https://img.shields.io/badge/File%20to-undo-red)](https://raw.githubusercontent.com/AlparDuman/windows-tweaks-collection/main/del%20autoEndTask.reg) |
+| Always show full context menu, instead of new windows 11 simplified | [![add](https://img.shields.io/badge/File%20to-install-blue)](https://raw.githubusercontent.com/AlparDuman/windows-tweaks-collection/main/add%20oldMenu.reg) [![undo](https://img.shields.io/badge/File%20to-undo-red)](https://raw.githubusercontent.com/AlparDuman/windows-tweaks-collection/main/del%20oldMenu.reg) |
 ## Powershell commands
-* <p align="justify">Show Windows activation key `(Get-WmiObject -query ’select * from SoftwareLicensingService‘).OA3xOriginalProductKey`</p>
+| Describtion  | Command |
+| - | - |
+| Read windows activation key | `(Get-WmiObject -query ’select * from SoftwareLicensingService‘).OA3xOriginalProductKey` |
+## Cmd commands
+| Describtion  | Command |
+| - | - |
+| Repair system errors on storage device. Replace `c:` with drive letter | `chkdsk c: /f /r` |
