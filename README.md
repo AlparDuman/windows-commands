@@ -11,3 +11,4 @@
 | Describtion  | Command |
 | - | - |
 | Repair system errors on storage device. Replace `c:` with drive letter | `chkdsk c: /f /r` |
+| Display a list of all network connections, as address with port | `netstat -an` |
